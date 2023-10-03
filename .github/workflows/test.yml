@@ -1,5 +1,10 @@
 on: issue_comment
 
+permissions:
+  contents: read
+
 jobs:
   echo-body:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
